@@ -1,0 +1,27 @@
+
+
+.container-seven-segment-clock{
+    width: 1200px;
+    height: 400px;
+    background-color: #171a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-seven-segment-clock__seven-segment-clock{
+    width: 1180px;
+    height: 380px;
+    background-color: #000020;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.seven-segment-clock__hours,
+.seven-segment-clock__minutes,
+.seven-segment-clock__seconds{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}

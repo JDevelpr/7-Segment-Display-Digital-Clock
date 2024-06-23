@@ -1,0 +1,76 @@
+
+.general-container-level-one__container-seven-segment{
+    width: 150px;
+    height: 270px;
+    background-color: #171a4a;
+    border: 2px solid #2f2c79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-seven-segment__seven-segment{
+    width: 140px;
+    height: 260px;
+    display: grid;
+    place-content: center;
+    grid-gap: 4px;
+    grid-template-columns: repeat(4,22px);
+    grid-template-rows: repeat(9,20px);
+    grid-template-areas:
+        "a a a a"
+    "f space space b"
+    "f space space b"
+    "f space space b"
+        "g g g g "
+    "e space- space- c"
+    "e space- space- c"
+    "e space- space- c"
+        "d d d d"
+    ;
+}
+
+.led{
+    background-color: rgba(102, 102, 102, 0.568);
+    border: 1px solid #000020;
+    border-radius: 8px;
+}
+
+
+.seven-segment__segment-a{
+    grid-area: a;
+}
+
+.seven-segment__segment-f{
+    grid-area: f;
+}
+
+.seven-segment__segment-b{
+    grid-area: b;
+}
+
+.seven-segment__segment-space{
+    grid-area: space;
+}
+
+.seven-segment__segment-g{
+    grid-area: g;
+}
+
+.seven-segment__segment-e{
+    grid-area: e;
+}
+
+.seven-segment__segment-c{
+    grid-area: c;
+}
+
+.seven-segment__segment-d{
+    grid-area: d;
+}
+
+
+.segment--led-on {
+    background-color: greenyellow;
+    border: none;
+}
